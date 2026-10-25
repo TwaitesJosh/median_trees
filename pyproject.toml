@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "median-trees"
+version = "0.1.0"
+description = "Random trees cut at data quantiles with a sparse linear head: tuning-free, strong with many classes and on embeddings."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "AUTHOR NAME" }]
+keywords = ["machine learning", "random forest", "tabular", "classification", "embeddings", "scikit-learn"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["numpy>=1.24", "scipy>=1.10", "scikit-learn>=1.3", "numba>=0.58"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+bench = ["openml", "pandas", "lightgbm", "xgboost", "catboost", "threadpoolctl", "pytabkit", "tabpfn"]
+
+[project.urls]
+Homepage = "https://github.com/USER/median-trees"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

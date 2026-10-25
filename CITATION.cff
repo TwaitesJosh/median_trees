@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use median trees, please cite it as below."
+title: "Median trees: random quantile-split forests with a sparse linear head"
+authors:
+  - family-names: "FAMILY NAME"
+    given-names: "GIVEN NAME"
+version: 0.1.0
+date-released: 2026-10-24
+url: "https://github.com/USER/median-trees"
+license: BSD-3-Clause
