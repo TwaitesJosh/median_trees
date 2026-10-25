@@ -12,7 +12,7 @@ proba = clf.predict_proba(X_test)
 scikit-learn compatible, handles missing values natively, CPU-parallel through Numba. Status: research release 0.1.
 
 ```bash
-pip install git+https://github.com/twaitesjosh/median-trees
+pip install git+https://github.com/twaitesjosh/median_trees
 ```
 
 ## The idea in one picture
